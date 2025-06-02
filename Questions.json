@@ -1,0 +1,171 @@
+[
+  {
+    "id": 1,
+    "type": "multiple",
+    "question": "Trouvez une singularité qui relie Morangis et Rodez. Cette relation a été officialisée en 2000 et est présente sur certains panneaux. ?",
+    "choices": ["Les deux villes font partie des plus beaux villages de France", 
+                "Les sont jumelées avec la même ville allemande ", 
+                "Les deux villes sont classées au patrimoine immatériel de l’UNESCO",
+                "Les deux villes sont traversées par le même méridien"],
+    "correctAnswers": ["Les deux villes sont traversées par le même méridien"],
+    "explanation": "Le méridien qui passe à Morangis est le méridien 2°20' Est. Les deux villes sont situées dans le même degré de longitude, et à quelques minutes d'écart. La méridien exact passe à gauche de Rodez à environ 20 km"
+  },
+  {
+    "id": 2,
+    "type": "multiple",
+    "question": "Comment s'appelle ce méridien ?",
+    "choices": ["Le méridien de Greenwich", 
+                "Le méridien de Paris", 
+                "La méridienne verte",
+                "International Date Line"],
+    "correctAnswers": ["Le méridien de Paris","La méridienne verte"],
+    "explanation": "Le méridien de Paris (qui passe à Morangis) a été nommé Méridienne verte en 2000 dans le cadre des festivités du passage au 3eme millénaire. Son tracé est matérialisé par 10.000 arbres plantés le long de son parcours"
+  },
+  {
+    "id": 3,
+    "type": "multiple",
+    "question": "Qu'évoquent au moins trois des noms de rues dans lesquelles vous avez habité ? (adresses communes ou de votre enfance)",
+    "choices": ["Un artiste", 
+                "Un notable", 
+                "Un aviateur",
+                "Un militaire",
+                "Un végétal"],
+    "correctAnswers": ["Un aviateur"],
+    "explanation": "Jean Mermoz, Henri Farman et le commandant Pilot ont marqué l'histoire de l'aviation française."
+  },{
+    "id": 4,
+    "type": "multiple",
+    "question": "Quelques questions de Mathématiques, sachant que Fabrice adore les maths et que c'est une tradition familiale depuis Papy Gilbert !\n L'égalité : **i² +1 = 0** est-elle possible ?",
+    "choices": ["Oui", 
+                "Non",   
+                "Peut-être",
+                "Je fais appel à un ami !"],
+    "correctAnswers": ["Oui"],
+    "explanation": "En arithmétique classique, i² = -1 est impossible !\nMais selon la théorie des Complexes,  le symbole **`i`** désigne l’**unité imaginaire**, définie comme le **nombre dont le carré est égal à –1**, soit : `i² = –1`\nC’est la base des nombres complexes, permettant d’écrire tout nombre complexe sous la forme **`a + bi`**, où `a` et `b` sont réels.\n Pour mémoire en terminale S, j'ai passé des heures à expliquer les Complexes à Fabrice sans succès je crois !"
+  },
+  {
+    "id": 5,
+    "type": "multiple",
+    "question": "Quelle est la distance à vol d'oiseau entre Morangis et Rodez en mm  ?",
+    "choices": ["4 900 mm", 
+                "490 000 mm", 
+                "490 000 000 mm",
+                "490 000 000 000 mm"],
+    "correctAnswers": ["490 000 000 mm"],
+    "explanation": "La distance à vol d'oiseau est d'environ 490 km soit 490 000 m et donc 490 000 000 mm "
+  },
+  {
+    "id": 6,
+    "type": "multiple",
+    "question": "De combien de jours Juliette est-elle plus jeune que Fabrice ? ",
+    "choices": ["1522 jours", 
+                "1682 jours", 
+                "1714 jours",
+                "Trop relou à calculer"],
+    "correctAnswers": ["1682 jours"],
+    "explanation": "Entre le 20 mars 1990 et le 27 octobre 1994 il y a 1682 jours soit plus de 4 ans et 7 mois"
+  },
+  {
+    "id": 7,
+    "type": "multiple",
+    "question": "Dans quel pays a été fondée la marque de machines à café Conti ? ",
+    "choices": ["Autriche", 
+                "Monaco", 
+                "Italie",
+                "France"],
+    "correctAnswers": ["France"],
+    "explanation": "En 1950, la société SACOME est créée (Société d’Ateliers de Constructions Mécaniques et électriques), par son fondateur M. Siksik. Née de sa passion pour le café et l’ingénierie, il débute la fabrication de machines à café, sur le quai Conti à Paris, lieu qui est à l’origine du nom de la marque CONTI.\n Aujourd’hui, à cette adresse se trouve la prestigieuse monnaie de Paris !\nSix ans plus tard, en 1956, le prince Rainier de Monaco souhaite renforcer l’économie de sa principauté en invitant des entreprises à s’y installer. Conti déménage à MONACO sur deux sites."
+  },
+  {
+  "id": 8,
+  "type": "dragdrop",
+  "question": "Classez ces villes par distance croissante à vol d’oiseau depuis Paris ",
+  "items": ["Albertville", "Annecy", "Rodez","Toulouse","Aix-en-Provence","Chamonix"],
+  "targets": ["434 km", "463 km", "472 km","490 km","588 km","638 km"],
+  "correctMatches": {
+    "Albertville": "463 km",
+    "Annecy": "434 km",
+    "Rodez": "490 km",
+    "Toulouse": "588 km",
+    "Aix-en-Provence": "638 km",
+    "Chamonix": "472 km"
+  },
+  "explanation": "Les distances à vol d'oiseau sont bien plus courtes que les distances routières\n le classement est Annecy, Albertville, Chamonix, Rodez, Toulouse, Aix-en-Provence."
+},
+{
+  "id": 9,
+  "type": "multiple",
+    "question": "Comment dit-on « amour » en norvégien ?",
+  "choices": ["Kjaerlighet", "Love", "Liebe", "Kärlek","Rakkaus"],
+  "correctAnswers": ["Kjaerlighet"],
+  "explanation": "En norvégien : Kjaerlighet, en anglais : Love, en allemand : Liebe, en suédois: Kärlek, en finnois : Rakkaus"
+},
+{
+  "id": 10,
+  "type": "dragdrop",
+  "question": "Classez chateaux par date de construction initiale ",
+  "items": ["Fontainebleau", "Vincennes","Tuileries","Labro"],
+  "targets": ["1", "2", "3","4"],
+  "correctMatches": {
+    "Fontainebleau": "1",
+    "Vincennes": "2",
+    "Labro": "3",
+    "Tuileries": "4"
+  },
+  "explanation": "Le chateau de Fontainebleau initial date de 1137 (il a été énormement agrandi sous François 1er), le chateau de Vincennes a été principalement construit à partir de 1380, le chateau de Labro a été édifié en 1519 et les tuilleries en 1564"
+},
+{
+  "id": 11,
+  "type": "multiple",
+    "question": "Quelle est la fleur emblème de l’Aubrac ?",
+  "choices": ["Narcisse", "Jonquille", "Gentiane", "Coquelicot"],
+  "correctAnswers": ["Gentiane"],
+  "explanation": "La gentiane jaune de l'aubrac est utilisée pour faire des liqueurs et apéritifs à goût amer comme l'Avèze et la Salers"
+},
+{
+  "id": 12,
+  "type": "dragdrop",
+  "question": "Associez ces sommets à leur hauteur ",
+  "items": ["Grande Sassière", "Grande Casse", "Grande motte", "Aiguille de Péclet"],
+  "targets": ["3855", "3747", "3653","3561"],
+  "correctMatches": {
+    "Grande Sassière": "3747",
+    "Grande Casse": "3855",
+    "Grande motte": "3653",
+    "Aiguille de Péclet": "3561"
+  },
+  "explanation": "Grande Sassière : 3747 m, Grande Casse : 3855 m, Grande motte : 3653 m, Aiguille de Péclet : 3561 m"
+},
+{
+  "id": 13,
+  "type": "multiple",
+    "question": "Quel est la hauteur maximale du viaduc de Millau ?",
+  "choices": ["432 m", "375 m", "343 m", "407 m"],
+  "correctAnswers": ["343 m"],
+  "explanation": "De sa base au plus haut des mats le viaduc fait 343 m soit plus haut que la tour Eiffel"
+},
+{
+  "id": 14,
+  "type": "multiple",
+    "question": "Comment s’appellent les habitants de Neuilly-sur-Seine ?",
+  "choices": ["Neuillysiens", "Neuillois", "Neuilléens", "Neuillysois"],
+  "correctAnswers": ["Neuilléens"],
+  "explanation": "Les habitants de Neuilly sont les Neuilléens"
+},
+{
+  "id": 15,
+  "type": "multiple",
+    "question": "Quelle est la seule affirmation correcte  ?",
+  "choices": ["Le Pithiviers n’a pas de pâte feuilletée", "Le Pithiviers n’a pas de frangipane", "Le Pithiviers est salé", "Le Pithiviers est fait avec des noisettes"],
+  "correctAnswers": ["Le Pithiviers n’a pas de frangipane"],
+  "explanation": "Le Pithiviers n’a pas de frangipane mais de la crème d’amande, il est sucré et fait avec des amandes. Il est aussi fait avec de la pâte feuilletée, mais pas toujours."
+},
+{
+  "id": 16,
+  "type": "multiple",
+    "question": "Et maintenant la question à 1 million d'euros : Pendant que Fabrice s'amuse sur le Mont-Blanc, que fait sa future épouse ?",
+  "choices": ["Comme Penelope elle tisse sa toile","Comme Martine elle va à la mer","Comme Nini l'efficace elle fait le ménage","Comme Juliette la Juriste elle créé ANEDIA"],
+  "correctAnswers": ["Comme Juliette la Juriste elle créé ANEDIA"],
+  "explanation": "Pour éviter de se ronger les ongles d'inquiétude, Juliette a usé de ses talents de juriste avec efficacité et célérité pour créer la société ANEDIA !\n Que de temps gagné et de prises de tôte en moins pour moi !\n Merci encore.\n Cela mérite une récomponse. Voir à la fin de ce quiz..."
+}
+]
