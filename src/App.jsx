@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Box, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import QuizPage from "./QuizPage";
 import DragDropPage from "./DragDropPage";
 import ResultPage from "./ResultPage";
@@ -87,7 +87,7 @@ const App = () => {
         sx={{
           width: "100vw",
           height: "100vh",
-          backgroundImage: "url('/mariage1.png')",
+          backgroundImage: `url('${import.meta.env.BASE_URL}mariage1.png')`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
@@ -111,7 +111,7 @@ const App = () => {
       sx={{
         width: "100vw",
         height: "100vh",
-        backgroundImage: "url('mariage1.png')",
+        backgroundImage: `url('${import.meta.env.BASE_URL}mariage1.png')`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
@@ -124,21 +124,38 @@ const App = () => {
           justifyContent: "center",
           alignItems: "flex-start",
           height: "100vh",
-          paddingTop: "15vh"
+          paddingTop: "5vh"
         }}
       >
-        <Container maxWidth="sm">
-          <Box position="relative" zIndex={1}>
-            <Typography
-              variant="h4"
-              align="center"
-              fontWeight="bold"
-              color="white"
-              sx={{ mb: 4, textShadow: "0 0 4px rgba(0,0,0,0.6)" }}
-            >
-              Tests de culture prénuptial de Juju et Baf
-            </Typography>
+        <Box
+          sx={{
+            width: { xs: "90%", md: "70%" },
+            position: "relative",
+            zIndex: 1
+          }}
+        >
+          {/* Titre fixe au-dessus du contenu scrollable */}
+          <Typography
+            variant="h4"
+            align="center"
+            fontWeight="bold"
+            color="white"
+            sx={{ mb: 1, textShadow: "0 0 6px black" }}
+          >
+            Tests de culture prénuptial de Juju et Baf
+          </Typography>
 
+          {/* Contenu scrollable */}
+          <Box
+            sx={{
+              maxHeight: "85vh",
+              overflowY: "auto",
+              backgroundColor: "rgba(255, 255, 255, 0.85)",
+              borderRadius: 2,
+              padding: 2,
+              boxShadow: 6
+            }}
+          >
             {question.type === "multiple" ? (
               <QuizPage
                 question={question}
@@ -176,7 +193,7 @@ const App = () => {
               />
             ) : null}
           </Box>
-        </Container>
+        </Box>
       </Box>
     </Box>
   );

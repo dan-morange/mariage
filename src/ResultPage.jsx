@@ -1,15 +1,18 @@
-// ResultPage.jsx
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Typography,
   Paper,
   Stack,
   Button,
-  Container
+  Container,
+  FormControlLabel,
+  Switch,
 } from "@mui/material";
 
 const ResultPage = ({ questions, answers, onRestart }) => {
+  const [showRecap, setShowRecap] = useState(false);
+
   const total = questions.length;
   const correctCount = questions.reduce((acc, q) => {
     if (q.type === "multiple") {
@@ -31,20 +34,17 @@ const ResultPage = ({ questions, answers, onRestart }) => {
     <Box
       sx={{
         width: "100vw",
-        minHeight: "100vh",
-        backgroundImage: "url('/mariage1.png')",
+        height: "100vh",
+        backgroundImage: `url('${import.meta.env.BASE_URL}mariage1.png')`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "flex-start",
-        pt: "15vh",
-        color: "black"
+        position: "relative",
       }}
     >
-      <Container maxWidth="sm">
-        <Paper elevation={6} sx={{ p: 4, bgcolor: "white" }}>
+      <Box sx={{ pt: "10vh" }}>
+       <Container maxWidth="sm">
+        <Paper elevation={6} sx={{ mt: 4,p: 4, bgcolor: "white" }}>
           <Typography variant="h4" gutterBottom align="center">
             Résultats du Quiz
           </Typography>
@@ -53,78 +53,129 @@ const ResultPage = ({ questions, answers, onRestart }) => {
             Score : {correctCount} / {total}
           </Typography>
 
-          <Stack spacing={2} mt={4}>
-            {questions.map((q, index) => {
-              const userAnswer = answers[q.id];
-              let isCorrect = false;
-              let expected;
+          <Typography variant="body2" sx={{ padding: 1 }}>
+            Félicitations ! Vous avez terminé le quiz avec un très bon score. Vous êtes prêts pour le Mariage !
+          </Typography>
 
-              if (q.type === "multiple") {
-                expected = q.correctAnswers.sort().join();
-                const given = (userAnswer || []).sort().join();
-                isCorrect = expected === given;
-              } else if (q.type === "dragdrop") {
-                expected = q.correctMatches;
-                const given = userAnswer || {};
-                isCorrect = Object.entries(expected).every(
-                  ([item, target]) => given[item] === target
-                );
+          <Typography variant="body2" sx={{ padding: 1, color: "red" }}>
+            <strong>Je tenais en particulier à remercier Juliette pour son aide précieuse et le temps passé pour la création d'ANEDIA. Aussi je vous invite à ouvrir le cadeau ci-dessous, que vous pourrez utiliser avant ou après la cérémonie.</strong>
+          </Typography>
+
+          <Button
+            variant="contained"
+            sx={{
+              padding: 0,
+              minWidth: "auto",
+              borderRadius: 2,
+            }}
+            onClick={() => {
+              window.open("https://drive.google.com/file/d/1-uQ-do2zVYzJ4a7v_LhP9lJ3NKNz4wS6/view?usp=sharing", "_blank");
+            }}
+          >
+            <Box
+              component="img"
+              src="cadeau.png"
+              alt="Bouton cadeau"
+              sx={{
+                width: 100,
+                objectFit: "cover",
+                borderRadius: 2,
+              }}
+            />
+          </Button>
+
+          {/* Switch pour afficher/cacher le récapitulatif */}
+          <Box mt={3}>
+            <FormControlLabel
+              control={
+                <Switch
+                  checked={showRecap}
+                  onChange={() => setShowRecap(!showRecap)}
+                />
               }
+              label="Afficher le récapitulatif des réponses"
+            />
+          </Box>
 
-              return (
-                <Paper
-                  key={q.id}
-                  sx={{ p: 2, bgcolor: isCorrect ? "#e0ffe0" : "#ffe0e0" }}
-                >
-                  <Typography variant="subtitle1">
-                    {index + 1}. {q.question}
-                  </Typography>
+          {showRecap && (
+            <>
+              <Typography variant="h6" sx={{ padding: 1 }}>
+                Récapitulatif des réponses
+              </Typography>
+              <Stack spacing={2} mt={2}>
+                {questions.map((q, index) => {
+                  const userAnswer = answers[q.id];
+                  let isCorrect = false;
+                  let expected;
 
-                  {q.type === "multiple" && (
-                    <>
-                      <Typography variant="body2">
-                        ✅ Réponse(s) correcte(s) : {q.correctAnswers.join(", ")}
-                      </Typography>
-                      <Typography variant="body2">
-                        📝 Ta réponse : {(userAnswer || []).join(", ")}
-                      </Typography>
-                    </>
-                  )}
+                  if (q.type === "multiple") {
+                    expected = q.correctAnswers.sort().join();
+                    const given = (userAnswer || []).sort().join();
+                    isCorrect = expected === given;
+                  } else if (q.type === "dragdrop") {
+                    expected = q.correctMatches;
+                    const given = userAnswer || {};
+                    isCorrect = Object.entries(expected).every(
+                      ([item, target]) => given[item] === target
+                    );
+                  }
 
-                  {q.type === "dragdrop" && (
-                    <Box mt={1}>
-                      <Typography variant="body2">✅ Réponses attendues :</Typography>
-                      {Object.entries(q.correctMatches).map(([item, target]) => (
-                        <Typography variant="body2" key={item}>
-                          {item} → {target}
-                        </Typography>
-                      ))}
-
-                      <Typography variant="body2" mt={1}>
-                        📝 Tes réponses :
-                      </Typography>
-                      {Object.entries(userAnswer || {}).map(([item, target]) => (
-                        <Typography variant="body2" key={item}>
-                          {item} → {target}
-                        </Typography>
-                      ))}
-                    </Box>
-                  )}
-
-                  {q.explanation && (
-                    <Typography
-                      variant="body2"
-                      mt={1}
-                      sx={{ color: "#666" }}
-                      whiteSpace="pre-line"
+                  return (
+                    <Paper
+                      key={q.id}
+                      sx={{ p: 2, bgcolor: isCorrect ? "#e0ffe0" : "#ffe0e0" }}
                     >
-                      💡 {q.explanation}
-                    </Typography>
-                  )}
-                </Paper>
-              );
-            })}
-          </Stack>
+                      <Typography variant="subtitle1">
+                        {index + 1}. {q.question}
+                      </Typography>
+
+                      {q.type === "multiple" && (
+                        <>
+                          <Typography variant="body2">
+                            ✅ Réponse(s) correcte(s) : {q.correctAnswers.join(", ")}
+                          </Typography>
+                          <Typography variant="body2">
+                            📝 Ta réponse : {(userAnswer || []).join(", ")}
+                          </Typography>
+                        </>
+                      )}
+
+                      {q.type === "dragdrop" && (
+                        <Box mt={1}>
+                          <Typography variant="body2">✅ Réponses attendues :</Typography>
+                          {Object.entries(q.correctMatches).map(([item, target]) => (
+                            <Typography variant="body2" key={item}>
+                              {item} → {target}
+                            </Typography>
+                          ))}
+
+                          <Typography variant="body2" mt={1}>
+                            📝 Tes réponses :
+                          </Typography>
+                          {Object.entries(userAnswer || {}).map(([item, target]) => (
+                            <Typography variant="body2" key={item}>
+                              {item} → {target}
+                            </Typography>
+                          ))}
+                        </Box>
+                      )}
+
+                      {q.explanation && (
+                        <Typography
+                          variant="body2"
+                          mt={1}
+                          sx={{ color: "#666" }}
+                          whiteSpace="pre-line"
+                        >
+                          💡 {q.explanation}
+                        </Typography>
+                      )}
+                    </Paper>
+                  );
+                })}
+              </Stack>
+            </>
+          )}
 
           <Box textAlign="center" mt={4}>
             <Button variant="contained" onClick={onRestart}>
@@ -133,6 +184,7 @@ const ResultPage = ({ questions, answers, onRestart }) => {
           </Box>
         </Paper>
       </Container>
+       </Box>
     </Box>
   );
 };

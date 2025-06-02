@@ -4,16 +4,17 @@
     "type": "multiple",
     "question": "Trouvez une singularité qui relie Morangis et Rodez. Cette relation a été officialisée en 2000 et est présente sur certains panneaux. ?",
     "choices": ["Les deux villes font partie des plus beaux villages de France", 
-                "Les sont jumelées avec la même ville allemande ", 
+                "Les deux villes sont jumelées avec la même ville allemande ", 
                 "Les deux villes sont classées au patrimoine immatériel de l’UNESCO",
                 "Les deux villes sont traversées par le même méridien"],
+    "image": "q1.png",
     "correctAnswers": ["Les deux villes sont traversées par le même méridien"],
     "explanation": "Le méridien qui passe à Morangis est le méridien 2°20' Est. Les deux villes sont situées dans le même degré de longitude, et à quelques minutes d'écart. La méridien exact passe à gauche de Rodez à environ 20 km"
   },
   {
     "id": 2,
     "type": "multiple",
-    "question": "Comment s'appelle ce méridien ?",
+    "question": "Comment s'appelle ce méridien ? (plusieurs réponses possibles)",
     "choices": ["Le méridien de Greenwich", 
                 "Le méridien de Paris", 
                 "La méridienne verte",
@@ -31,6 +32,7 @@
                 "Un militaire",
                 "Un végétal"],
     "correctAnswers": ["Un aviateur"],
+    "image": "q3.png",
     "explanation": "Jean Mermoz, Henri Farman et le commandant Pilot ont marqué l'histoire de l'aviation française."
   },{
     "id": 4,
@@ -142,6 +144,7 @@
     "question": "Quel est la hauteur maximale du viaduc de Millau ?",
   "choices": ["432 m", "375 m", "343 m", "407 m"],
   "correctAnswers": ["343 m"],
+  "image": "q13.png",
   "explanation": "De sa base au plus haut des mats le viaduc fait 343 m soit plus haut que la tour Eiffel"
 },
 {
@@ -150,6 +153,7 @@
     "question": "Comment s’appellent les habitants de Neuilly-sur-Seine ?",
   "choices": ["Neuillysiens", "Neuillois", "Neuilléens", "Neuillysois"],
   "correctAnswers": ["Neuilléens"],
+  "image": "q14.png",
   "explanation": "Les habitants de Neuilly sont les Neuilléens"
 },
 {
@@ -166,6 +170,6 @@
     "question": "Et maintenant la question à 1 million d'euros : Pendant que Fabrice s'amuse sur le Mont-Blanc, que fait sa future épouse ?",
   "choices": ["Comme Penelope elle tisse sa toile","Comme Martine elle va à la mer","Comme Nini l'efficace elle fait le ménage","Comme Juliette la Juriste elle créé ANEDIA"],
   "correctAnswers": ["Comme Juliette la Juriste elle créé ANEDIA"],
-  "explanation": "Pour éviter de se ronger les ongles d'inquiétude, Juliette a usé de ses talents de juriste avec efficacité et célérité pour créer la société ANEDIA !\n Que de temps gagné et de prises de tôte en moins pour moi !\n Merci encore.\n Cela mérite une récomponse. Voir à la fin de ce quiz..."
+  "explanation": "Pour éviter de se ronger les ongles d'inquiétude, Juliette a usé de ses talents de juriste avec efficacité et célérité pour créer la société ANEDIA !\n Que de temps gagné et de prises de tête en moins pour moi !\n Merci encore.\n **Cela mérite une récomponse. Voir à la fin de ce quiz...**"
 }
 ]
