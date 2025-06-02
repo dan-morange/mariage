@@ -14,7 +14,7 @@ const App = () => {
   const [quizFinished, setQuizFinished] = useState(false);
 
   useEffect(() => {
-    fetch("/Questions.json")
+    fetch(`${import.meta.env.BASE_URL}Questions.json`)
       .then((res) => res.json())
       .then((data) => setQuestions(data))
       .catch((err) => console.error("Erreur chargement JSON :", err));
@@ -111,7 +111,7 @@ const App = () => {
       sx={{
         width: "100vw",
         height: "100vh",
-        backgroundImage: "url('/mariage1.png')",
+        backgroundImage: "url('mariage1.png')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
