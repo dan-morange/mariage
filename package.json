@@ -1,6 +1,8 @@
 {
   "name": "mariage",
-  "private": true,
+  "homepage": "https://dan-morange.github.io/mariage",
+  "description": "Application de quiz pour le mariage de Juliette et Fabrice",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
