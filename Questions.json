@@ -20,6 +20,7 @@
                 "La méridienne verte",
                 "International Date Line"],
     "correctAnswers": ["Le méridien de Paris","La méridienne verte"],
+    "image": "q2.png",
     "explanation": "Le méridien de Paris (qui passe à Morangis) a été nommé Méridienne verte en 2000 dans le cadre des festivités du passage au 3eme millénaire. Son tracé est matérialisé par 10.000 arbres plantés le long de son parcours"
   },
   {
@@ -43,7 +44,8 @@
                 "Peut-être",
                 "Je fais appel à un ami !"],
     "correctAnswers": ["Oui"],
-    "explanation": "En arithmétique classique, i² = -1 est impossible !\nMais selon la théorie des Complexes,  le symbole **`i`** désigne l’**unité imaginaire**, définie comme le **nombre dont le carré est égal à –1**, soit : `i² = –1`\nC’est la base des nombres complexes, permettant d’écrire tout nombre complexe sous la forme **`a + bi`**, où `a` et `b` sont réels.\n Pour mémoire en terminale S, j'ai passé des heures à expliquer les Complexes à Fabrice sans succès je crois !"
+    "image": "q4.png",
+      "explanation": "En arithmétique classique, i² = -1 est impossible !\nMais selon la théorie des Complexes,  le symbole **`i`** désigne l’**unité imaginaire**, définie comme le **nombre dont le carré est égal à –1**, soit : `i² = –1`\nC’est la base des nombres complexes, permettant d’écrire tout nombre complexe sous la forme **`a + bi`**, où `a` et `b` sont réels.\n Pour mémoire en terminale S, j'ai passé des heures à expliquer les Complexes à Fabrice sans succès je crois !"
   },
   {
     "id": 5,
@@ -54,6 +56,7 @@
                 "490 000 000 mm",
                 "490 000 000 000 mm"],
     "correctAnswers": ["490 000 000 mm"],
+    "image": "q5.png",
     "explanation": "La distance à vol d'oiseau est d'environ 490 km soit 490 000 m et donc 490 000 000 mm "
   },
   {
@@ -65,6 +68,7 @@
                 "1714 jours",
                 "Trop relou à calculer"],
     "correctAnswers": ["1682 jours"],
+    "image": "q6.png",
     "explanation": "Entre le 20 mars 1990 et le 27 octobre 1994 il y a 1682 jours soit plus de 4 ans et 7 mois"
   },
   {
@@ -76,6 +80,7 @@
                 "Italie",
                 "France"],
     "correctAnswers": ["France"],
+    "image": "q7.png",
     "explanation": "En 1950, la société SACOME est créée (Société d’Ateliers de Constructions Mécaniques et électriques), par son fondateur M. Siksik. Née de sa passion pour le café et l’ingénierie, il débute la fabrication de machines à café, sur le quai Conti à Paris, lieu qui est à l’origine du nom de la marque CONTI.\n Aujourd’hui, à cette adresse se trouve la prestigieuse monnaie de Paris !\nSix ans plus tard, en 1956, le prince Rainier de Monaco souhaite renforcer l’économie de sa principauté en invitant des entreprises à s’y installer. Conti déménage à MONACO sur deux sites."
   },
   {
@@ -100,6 +105,7 @@
     "question": "Comment dit-on « amour » en norvégien ?",
   "choices": ["Kjaerlighet", "Love", "Liebe", "Kärlek","Rakkaus"],
   "correctAnswers": ["Kjaerlighet"],
+  "image": "q9.png",
   "explanation": "En norvégien : Kjaerlighet, en anglais : Love, en allemand : Liebe, en suédois: Kärlek, en finnois : Rakkaus"
 },
 {
@@ -122,6 +128,7 @@
     "question": "Quelle est la fleur emblème de l’Aubrac ?",
   "choices": ["Narcisse", "Jonquille", "Gentiane", "Coquelicot"],
   "correctAnswers": ["Gentiane"],
+  "image": "q11.png",
   "explanation": "La gentiane jaune de l'aubrac est utilisée pour faire des liqueurs et apéritifs à goût amer comme l'Avèze et la Salers"
 },
 {
@@ -161,6 +168,7 @@
   "type": "multiple",
     "question": "Quelle est la seule affirmation correcte  ?",
   "choices": ["Le Pithiviers n’a pas de pâte feuilletée", "Le Pithiviers n’a pas de frangipane", "Le Pithiviers est salé", "Le Pithiviers est fait avec des noisettes"],
+  "image": "q15.png",
   "correctAnswers": ["Le Pithiviers n’a pas de frangipane"],
   "explanation": "Le Pithiviers n’a pas de frangipane mais de la crème d’amande, il est sucré et fait avec des amandes. Il est aussi fait avec de la pâte feuilletée, mais pas toujours."
 },
