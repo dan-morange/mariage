@@ -112,10 +112,10 @@
   "id": 10,
   "type": "multiple",
     "question": "Pendant quel siècle a été construit le Château de Labro ?",
-  "choices": ["XIVe siècle", "XIVe siècle", "XVe siècle", "XVIe siècle","XVIIe siècle"],
-  "correctAnswers": ["XVIe siècle"],
+  "choices": ["XIVᵉ siècle", "XVᵉ siècle", "XVIᵉ siècle","XVIIᵉ siècle"],
+  "correctAnswers": ["XVIᵉ siècle"],
   "image": "q10.png",
-  "explanation": "Le début de la construction du château de Labro a eu lieu en 1519, sous le règne de François 1er, et s'est achevé en 1524. Il est donc du XVIe siècle."
+  "explanation": "Le début de la construction du château de Labro a eu lieu en 1519, sous le règne de François 1er, et s'est achevé en 1524. Il est donc du XVIᵉ siècle."
 },
 {
   "id": 11,
