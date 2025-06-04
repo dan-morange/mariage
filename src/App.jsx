@@ -3,6 +3,7 @@ import { Box, Typography } from "@mui/material";
 import QuizPage from "./QuizPage";
 import DragDropPage from "./DragDropPage";
 import ResultPage from "./ResultPage";
+import IntroPage from "./IntroPage"; // ✅ import du composant intro
 
 const App = () => {
   const [questions, setQuestions] = useState([]);
@@ -12,6 +13,7 @@ const App = () => {
   const [isCorrectMap, setIsCorrectMap] = useState({});
   const [showExplanation, setShowExplanation] = useState({});
   const [quizFinished, setQuizFinished] = useState(false);
+  const [started, setStarted] = useState(false); // ✅ état pour la page d’accueil
 
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}Questions.json`)
@@ -69,7 +71,12 @@ const App = () => {
     setIsCorrectMap({});
     setShowExplanation({});
     setQuizFinished(false);
+    setStarted(false); // ✅ retour à la page d’accueil
   };
+
+  if (!started) {
+    return <IntroPage onStart={() => setStarted(true)} />;
+  }
 
   if (quizFinished) {
     return (
@@ -95,7 +102,7 @@ const App = () => {
           alignItems: "center",
           justifyContent: "center",
           color: "white",
-          fontSize: "1.5rem"
+          fontSize: "1.5rem",
         }}
       >
         Chargement du quiz...
@@ -115,7 +122,7 @@ const App = () => {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         backgroundPosition: "center",
-        position: "relative"
+        position: "relative",
       }}
     >
       <Box
@@ -124,17 +131,16 @@ const App = () => {
           justifyContent: "center",
           alignItems: "flex-start",
           height: "100vh",
-          paddingTop: "5vh"
+          paddingTop: "5vh",
         }}
       >
         <Box
           sx={{
             width: { xs: "90%", md: "70%" },
             position: "relative",
-            zIndex: 1
+            zIndex: 1,
           }}
         >
-          {/* Titre fixe au-dessus du contenu scrollable */}
           <Typography
             variant="h4"
             align="center"
@@ -145,7 +151,6 @@ const App = () => {
             Tests de culture prénuptial de Juju et Baf
           </Typography>
 
-          {/* Contenu scrollable */}
           <Box
             sx={{
               maxHeight: "85vh",
@@ -153,7 +158,7 @@ const App = () => {
               backgroundColor: "rgba(255, 255, 255, 0.85)",
               borderRadius: 2,
               padding: 2,
-              boxShadow: 6
+              boxShadow: 6,
             }}
           >
             {question.type === "multiple" ? (
