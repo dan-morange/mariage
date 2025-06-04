@@ -14,14 +14,14 @@
   {
     "id": 2,
     "type": "multiple",
-    "question": "Comment s'appelle ce méridien ? (plusieurs réponses possibles)",
+    "question": "Comment s'appelle ce méridien ? (plusieurs réponses)",
     "choices": ["Le méridien de Greenwich", 
                 "Le méridien de Paris", 
                 "La méridienne verte",
                 "International Date Line"],
     "correctAnswers": ["Le méridien de Paris","La méridienne verte"],
     "image": "q2.png",
-    "explanation": "Le méridien de Paris (qui passe à Morangis) a été nommé Méridienne verte en 2000 dans le cadre des festivités du passage au 3eme millénaire. Son tracé est matérialisé par 10.000 arbres plantés le long de son parcours"
+    "explanation": "Le méridien de Paris (qui passe à Morangis) a aussi été nommé Méridienne verte en 2000 dans le cadre des festivités du passage au 3eme millénaire. Son tracé est matérialisé par 10.000 arbres plantés le long de son parcours"
   },
   {
     "id": 3,
@@ -81,12 +81,12 @@
                 "France"],
     "correctAnswers": ["France"],
     "image": "q7.png",
-    "explanation": "En 1950, la société SACOME est créée (Société d’Ateliers de Constructions Mécaniques et électriques), par son fondateur M. Siksik. Née de sa passion pour le café et l’ingénierie, il débute la fabrication de machines à café, sur le quai Conti à Paris, lieu qui est à l’origine du nom de la marque CONTI.\n Aujourd’hui, à cette adresse se trouve la prestigieuse monnaie de Paris !\nSix ans plus tard, en 1956, le prince Rainier de Monaco souhaite renforcer l’économie de sa principauté en invitant des entreprises à s’y installer. Conti déménage à MONACO sur deux sites."
+    "explanation": "En 1950, la société SACOME est créée à Paris(Société d’Ateliers de Constructions Mécaniques et électriques), par son fondateur M. Siksik. Née de sa passion pour le café et l’ingénierie, il débute la fabrication de machines à café, sur le quai Conti à Paris, lieu qui est à l’origine du nom de la marque CONTI.\n Aujourd’hui, à cette adresse se trouve la prestigieuse monnaie de Paris !\nSix ans plus tard, en 1956, le prince Rainier de Monaco souhaite renforcer l’économie de sa principauté en invitant des entreprises à s’y installer. Conti déménage à MONACO sur deux sites."
   },
   {
   "id": 8,
   "type": "dragdrop",
-  "question": "Classez ces villes par distance croissante à vol d’oiseau depuis Paris ",
+  "question": "Associez ces villes à leur distance à vol d'oiseau de Paris",
   "items": ["Albertville", "Annecy", "Rodez","Toulouse","Aix-en-Provence","Chamonix"],
   "targets": ["434 km", "463 km", "472 km","490 km","588 km","638 km"],
   "correctMatches": {
@@ -110,17 +110,12 @@
 },
 {
   "id": 10,
-  "type": "dragdrop",
-  "question": "Classez chateaux par date de construction initiale ",
-  "items": ["Fontainebleau", "Vincennes","Tuileries","Labro"],
-  "targets": ["1", "2", "3","4"],
-  "correctMatches": {
-    "Fontainebleau": "1",
-    "Vincennes": "2",
-    "Labro": "3",
-    "Tuileries": "4"
-  },
-  "explanation": "Le chateau de Fontainebleau initial date de 1137 (il a été énormement agrandi sous François 1er), le chateau de Vincennes a été principalement construit à partir de 1380, le chateau de Labro a été édifié en 1519 et les tuilleries en 1564"
+  "type": "multiple",
+    "question": "Pendant quel siècle a été construit le Château de Labro ?",
+  "choices": ["XIVe siècle", "XIVe siècle", "XVe siècle", "XVIe siècle","XVIIe siècle"],
+  "correctAnswers": ["XVIe siècle"],
+  "image": "q10.png",
+  "explanation": "Le début de la construction du château de Labro a eu lieu en 1519, sous le règne de François 1er, et s'est achevé en 1524. Il est donc du XVIe siècle."
 },
 {
   "id": 11,
@@ -129,7 +124,7 @@
   "choices": ["Narcisse", "Jonquille", "Gentiane", "Coquelicot"],
   "correctAnswers": ["Gentiane"],
   "image": "q11.png",
-  "explanation": "La gentiane jaune de l'aubrac est utilisée pour faire des liqueurs et apéritifs à goût amer comme l'Avèze et la Salers"
+  "explanation": "La gentiane jaune de l'Aubrac est utilisée pour faire des liqueurs et apéritifs à goût amer comme l'Avèze et la Salers"
 },
 {
   "id": 12,
@@ -152,7 +147,7 @@
   "choices": ["432 m", "375 m", "343 m", "407 m"],
   "correctAnswers": ["343 m"],
   "image": "q13.png",
-  "explanation": "De sa base au plus haut des mats le viaduc fait 343 m soit plus haut que la tour Eiffel"
+  "explanation": "De sa base au plus haut des mâts le viaduc fait 343 m soit plus haut que la tour Eiffel"
 },
 {
   "id": 14,
@@ -178,6 +173,7 @@
     "question": "Et maintenant la question à 1 million d'euros : Pendant que Fabrice s'amuse sur le Mont-Blanc, que fait sa future épouse ?",
   "choices": ["Comme Penelope elle tisse sa toile","Comme Martine elle va à la mer","Comme Nini l'efficace elle fait le ménage","Comme Juliette la Juriste elle créé ANEDIA"],
   "correctAnswers": ["Comme Juliette la Juriste elle créé ANEDIA"],
+  "image": "q16.png",
   "explanation": "Pour éviter de se ronger les ongles d'inquiétude, Juliette a usé de ses talents de juriste avec efficacité et célérité pour créer la société ANEDIA !\n Que de temps gagné et de prises de tête en moins pour moi !\n Merci encore.\n **Cela mérite une récomponse. Voir à la fin de ce quiz...**"
 }
 ]
