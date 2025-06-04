@@ -43,7 +43,7 @@ const IntroPage = ({ onStart }) => {
         variant="h6"
         sx={{ textShadow: "0 0 6px black", mb: 4 }}
       >
-        Ce site a été construit par ANEDIA avec l'aide d'IA génératives.
+        Ce site a été construit avec l'aide de plusieurs IA génératives.
         Amusez-vous bien   💕
       </Typography>
       <ImageCarroussel images={images} interval={2000} />

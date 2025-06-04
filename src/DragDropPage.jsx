@@ -1,4 +1,3 @@
-// DragDropPage.jsx
 import React, { useState, useEffect } from "react";
 import {
   Box,
@@ -36,9 +35,16 @@ const DragDropPage = ({
   const handleDragEnd = (result) => {
     const { destination, draggableId } = result;
     if (!destination || destination.droppableId === "choices") return;
-    setMatches((prev) => ({ ...prev, [draggableId]: destination.droppableId }));
+    const updatedMatches = { ...matches, [draggableId]: destination.droppableId };
+    setMatches(updatedMatches);
     setItems((prev) => prev.filter((item) => item !== draggableId));
-    setAnswer(question.id, { ...matches, [draggableId]: destination.droppableId });
+    setAnswer(question.id, updatedMatches);
+  };
+
+  const handleReset = () => {
+    setItems(question.items);
+    setMatches({});
+    setAnswer(question.id, {});
   };
 
   return (
@@ -58,6 +64,9 @@ const DragDropPage = ({
 
       <Typography variant="h6" whiteSpace="pre-line" gutterBottom>
         {question.question}
+      </Typography>
+      <Typography variant="body2" whiteSpace="pre-line" gutterBottom>
+        Déplacez chaque élément dans la cible appropriée. Cliquez sur Reinitialiser pour tout remettre à zéro.
       </Typography>
 
       <DragDropContext onDragEnd={handleDragEnd}>
@@ -145,19 +154,15 @@ const DragDropPage = ({
           ◀ Précédent
         </Button>
         {!submitted && (
-          <Button
-            variant="contained"
-            onClick={onSubmitAnswer}
-          >
+          <Button variant="contained" onClick={onSubmitAnswer}>
             ✅ Soumettre
           </Button>
         )}
-        <Button
-          onClick={onShowExplanation}
-          disabled={!submitted}
-          color="secondary"
-        >
+        <Button onClick={onShowExplanation} disabled={!submitted} color="secondary">
           💡 Explication
+        </Button>
+        <Button onClick={handleReset} color="warning">
+          🔄 Réinitialiser
         </Button>
         {isLast && submitted && (
           <Button onClick={onFinish}>
