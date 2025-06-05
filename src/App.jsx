@@ -50,9 +50,9 @@ const App = () => {
     setIsCorrectMap((prev) => ({ ...prev, [question.id]: isCorrect }));
     setShowExplanation((prev) => ({ ...prev, [question.id]: false }));
 
-    if (current === questions.length - 1) {
+    /*if (current === questions.length - 1) {
       setTimeout(() => setQuizFinished(true), 100);
-    }
+    }*/
   };
 
   const handleShowExplanation = () => {
