@@ -171,7 +171,7 @@
   "id": 16,
   "type": "multiple",
     "question": "Et maintenant la question à 1 million d'euros : pendant que Fabrice s'amuse sur le Mont-Blanc, que fait sa future épouse ?",
-  "choices": ["Comme Penelope elle tisse sa toile","Comme Martine elle va à la mer","Comme Nini l'efficace elle fait le ménage","Comme Juliette la Juriste elle créé ANEDIA"],
+  "choices": ["Comme Penelope elle tisse sa toile","Comme Martine elle va à la mer","Comme Nini l'efficace elle fait le ménage","Comme Juliette la Juriste elle crée ANEDIA"],
   "correctAnswers": ["Comme Juliette la Juriste elle crée ANEDIA"],
   "image": "q16.png",
   "explanation": "Pour éviter de se ronger les ongles d'inquiétude, Juliette a usé de ses talents de juriste avec efficacité et célérité pour créer la société ANEDIA !\n Que de temps gagné et de prises de tête en moins pour moi !\n Merci encore.\n **Cela mérite une récomponse. Voir à la fin de ce quiz...**"
