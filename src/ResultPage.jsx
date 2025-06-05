@@ -58,7 +58,7 @@ const ResultPage = ({ questions, answers, onRestart }) => {
           </Typography>
 
           <Typography variant="body2" sx={{ padding: 1, color: "red" }}>
-            <strong>Juliette</strong>, je tenais en particulier à te remercier pour ton aide précieuse et le temps passé pour la création d'ANEDIA. Aussi je t'invite à ouvrir le <strong>cadeau</strong> ci-dessous, que que tu pourras utiliser avant ou après la cérémonie.
+            <strong>Juliette</strong>, je tenais en particulier à te remercier pour ton aide précieuse et le temps passé pour la création d'ANEDIA. Aussi je t'invite à ouvrir le <strong>cadeau</strong> ci-dessous,  que tu pourras utiliser avant fin août.
           </Typography>
 
           <Button
