@@ -2,7 +2,7 @@
   {
     "id": 1,
     "type": "multiple",
-    "question": "Trouvez une singularité qui relie Morangis et Rodez. Cette relation a été officialisée en 2000 et est présente sur certains panneaux. ?",
+    "question": "Trouvez une singularité qui relie Morangis et Rodez. Cette relation a été officialisée en 2000 et est présente sur certains panneaux. ",
     "choices": ["Les deux villes font partie des plus beaux villages de France", 
                 "Les deux villes sont jumelées avec la même ville allemande ", 
                 "Les deux villes sont classées au patrimoine immatériel de l’UNESCO",
@@ -21,7 +21,7 @@
                 "International Date Line"],
     "correctAnswers": ["Le méridien de Paris","La méridienne verte"],
     "image": "q2.png",
-    "explanation": "Le méridien de Paris (qui passe à Morangis) a aussi été nommé Méridienne verte en 2000 dans le cadre des festivités du passage au 3eme millénaire. Son tracé est matérialisé par 10.000 arbres plantés le long de son parcours"
+    "explanation": "Le méridien de Paris (qui passe à Morangis) a aussi été nommé Méridienne verte en 2000 dans le cadre des festivités du passage au 3eme millénaire. Son tracé est matérialisé par 10.000 arbres plantés le long de son parcours."
   },
   {
     "id": 3,
@@ -81,7 +81,7 @@
                 "France"],
     "correctAnswers": ["France"],
     "image": "q7.png",
-    "explanation": "En 1950, la société SACOME est créée à Paris(Société d’Ateliers de Constructions Mécaniques et électriques), par son fondateur M. Siksik. Née de sa passion pour le café et l’ingénierie, il débute la fabrication de machines à café, sur le quai Conti à Paris, lieu qui est à l’origine du nom de la marque CONTI.\n Aujourd’hui, à cette adresse se trouve la prestigieuse monnaie de Paris !\nSix ans plus tard, en 1956, le prince Rainier de Monaco souhaite renforcer l’économie de sa principauté en invitant des entreprises à s’y installer. Conti déménage à MONACO sur deux sites."
+    "explanation": "En 1950, la société SACOME est créée à Paris (Société d’Ateliers de Constructions Mécaniques et électriques), par son fondateur M. Siksik. Née de sa passion pour le café et l’ingénierie, il débute la fabrication de machines à café, sur le quai Conti à Paris, lieu qui est à l’origine du nom de la marque CONTI.\n Aujourd’hui, à cette adresse se trouve la prestigieuse monnaie de Paris !\nSix ans plus tard, en 1956, le prince Rainier de Monaco souhaite renforcer l’économie de sa principauté en invitant des entreprises à s’y installer. Conti déménage à MONACO sur deux sites."
   },
   {
   "id": 8,
@@ -143,7 +143,7 @@
 {
   "id": 13,
   "type": "multiple",
-    "question": "Quel est la hauteur maximale du viaduc de Millau ?",
+    "question": "Quelle est la hauteur maximale du viaduc de Millau ?",
   "choices": ["432 m", "375 m", "343 m", "407 m"],
   "correctAnswers": ["343 m"],
   "image": "q13.png",
@@ -170,9 +170,9 @@
 {
   "id": 16,
   "type": "multiple",
-    "question": "Et maintenant la question à 1 million d'euros : Pendant que Fabrice s'amuse sur le Mont-Blanc, que fait sa future épouse ?",
-  "choices": ["Comme Penelope elle tisse sa toile","Comme Martine elle va à la mer","Comme Nini l'efficace elle fait le ménage","Comme Juliette la Juriste elle créé ANEDIA"],
-  "correctAnswers": ["Comme Juliette la Juriste elle créé ANEDIA"],
+    "question": "Et maintenant la question à 1 million d'euros : pendant que Fabrice s'amuse sur le Mont-Blanc, que fait sa future épouse ?",
+  "choices": ["Comme Penelope elle tisse sa toile","Comme Martine elle va à la mer","Comme Nini l'efficace elle fait le ménage","Comme Juliette la Juriste elle crée ANEDIA"],
+  "correctAnswers": ["Comme Juliette la Juriste elle crée ANEDIA"],
   "image": "q16.png",
   "explanation": "Pour éviter de se ronger les ongles d'inquiétude, Juliette a usé de ses talents de juriste avec efficacité et célérité pour créer la société ANEDIA !\n Que de temps gagné et de prises de tête en moins pour moi !\n Merci encore.\n **Cela mérite une récomponse. Voir à la fin de ce quiz...**"
 }
