@@ -58,7 +58,7 @@ const ResultPage = ({ questions, answers, onRestart }) => {
           </Typography>
 
           <Typography variant="body2" sx={{ padding: 1, color: "red" }}>
-            <strong>Je tenais en particulier à remercier Juliette pour son aide précieuse et le temps passé pour la création d'ANEDIA. Aussi je vous invite à ouvrir le cadeau ci-dessous, que vous pourrez utiliser avant ou après la cérémonie.</strong>
+            <strong>Juliette</strong>, je tenais en particulier à remercier pour ton aide précieuse et le temps passé pour la création d'ANEDIA. Aussi je t'invite à ouvrir le <strong>cadeau</strong> ci-dessous, que que tu pourras utiliser avant ou après la cérémonie.
           </Typography>
 
           <Button
@@ -69,7 +69,7 @@ const ResultPage = ({ questions, answers, onRestart }) => {
               borderRadius: 2,
             }}
             onClick={() => {
-              window.open("https://drive.google.com/file/d/1-uQ-do2zVYzJ4a7v_LhP9lJ3NKNz4wS6/view?usp=sharing", "_blank");
+              window.open("https://tinyurl.com/mariageJFCadeauJuliette", "_blank");
             }}
           >
             <Box
